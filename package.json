@@ -1,0 +1,24 @@
+{
+  "name": "library-web-application",
+  "version": "1.0.0",
+  "description": "Library Web Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nukkers/Library-Web-Application.git"
+  },
+  "author": "Naukhez Ali",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nukkers/Library-Web-Application/issues"
+  },
+  "homepage": "https://github.com/Nukkers/Library-Web-Application#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.18.10"
+  }
+}
