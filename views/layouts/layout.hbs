@@ -1,14 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>{{title}}</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width" initial-scale="1"/>
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
+    <script type="text/javascript" src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
   </head>
   <body>
-    <div class="container mt-4">
-      {{{body}}}
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-2">
+          <ul class="sidebar-nav">
+            <li><a href="/catalog">Home</a></li>
+            <li><a href="/catalog/books">All Books</a></li>
+            <li><a href="/catalog/authors">All Authors</a></li>
+            <li><a href="/catalog/genres">All Genres</a></li>
+            <li><a href="/catalog/bookinstances">All Book-Instances</a></li>
+            <li><hr></li>
+            <li><a href="/catalog/author/create">Create new Author</a></li>
+            <li><a href="/catalog/genre/create">Create new genre</a></li>
+            <li><a href="/catalog/book/create">Create new Book</a></li>
+            <li><a href="/catalog/bookinstance/create">Create new book instance</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-10">
+          {{{body}}}
+        </div>
+      </div>
     </div>
   </body>
 </html>
