@@ -1,0 +1,15 @@
+<h1>{{genre.name}}</h1>
+
+<div style="margin-left:20px;margin-top:20px">
+    <h4>Books</h4>
+    <dl>
+        {{#each genre_books}}
+            <dt><a href="{{this.url}}">{{this.title}}</a></dt>
+            <dd>{{this.summary}}</dd>
+        {{else}}
+            <p>This genre has no books</p>
+        {{/each}}
+    </dl>
+
+
+</div>

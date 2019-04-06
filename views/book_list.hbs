@@ -2,7 +2,7 @@
 
 <ul class="list-group">
    {{#each book_list}}
-    <li class="list-group-item"><a href="{{this.url}}">{{this.title}}</a>  ({{this.author.name}})</li> 
+    <li class="list-group-item list-group-item-action"><a href="{{this.url}}">{{this.title}}</a>  ({{this.author.name}})</li> 
    {{else}}
     <li class="list-group-item">There are no books</li>
    {{/each}} 
